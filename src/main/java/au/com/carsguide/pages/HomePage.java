@@ -27,7 +27,7 @@ public class HomePage extends Utility {
     @FindBy(linkText = "Find a Dealer")
     WebElement findDealer;
 
-    public void mouseHoverOnBuySellTab(){
+   public void mouseHoverOnBuySellTab(){
         log.info("hovering mouse on the buy + sell tab" + buySellTab.toString());
         mouseHoverToElement(buySellTab);
     }
