@@ -35,24 +35,9 @@ public class UsedCarsPage extends Utility {
     @FindBy(id = "search-submit")
     WebElement findNextCar;
 
-    public String verifyUsedPageText(){
+     public String verifyUsedPageText(){
+        log.info("Verify the used cars page text" + verifyPageText.toString());
         return getTextFromElement(verifyPageText);
-    }
-
-    public void selectModelOfTheCarFromDropDownList(String text){
-        selectByVisibleTextFromDropDown(model, text);
-    }
-
-    public void selectLocationFromDropDownList(String text){
-        selectByVisibleTextFromDropDown(location, text);
-    }
-
-    public void selectPriceFromDropDownList(String text){
-        selectByVisibleTextFromDropDown(price, text);
-    }
-
-    public void clickOnFindMyNextCar(){
-        clickOnElement(findNextCar);
     }
 
 }
