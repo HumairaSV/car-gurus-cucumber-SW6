@@ -26,10 +26,12 @@ public class FindDealerPage extends Utility {
     WebElement clickFindDealers;
 
     public String verifyFindDealerPageText(){
+        log.info("Verify find dealer page text" + dealerPageText);
         return getTextFromElement(dealerPageText);
     }
 
     public void findDealerAndClick(String dealerName){
+        log.info("Find dealer and click on the find dealer search button" + searchDealers.toString()+ clickFindDealers.toString());
         sendTextToElement(searchDealers,dealerName);
         clickOnElement(clickFindDealers);
         By dealers = By.xpath("//a[contains(text(),'"+ dealerName+ "')]");
