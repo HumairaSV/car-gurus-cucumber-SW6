@@ -15,7 +15,8 @@ public class ResultPage extends Utility {
     @FindBy(xpath = "//h5[@class = 'carListing--textHeading']")
     WebElement verifyMake;
 
-    public String verifyTheMakeOfTheCarInResults(){
+ public String verifyTheMakeOfTheCarInResults(){
+        log.info("verify the make of the car in the results" + verifyMake.toString());
         return getTextFromElement(verifyMake);
     }
 }
