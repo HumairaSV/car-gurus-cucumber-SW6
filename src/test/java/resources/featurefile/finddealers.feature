@@ -1,6 +1,6 @@
 Feature: Find the dealers and verify
 
-  @Smoke1
+  @Smoke @Regression
   Scenario Outline: Find the dealers and verify the dealers are in list
     Given I am on homepage
     When  I mouse hover on buy+sell tab
