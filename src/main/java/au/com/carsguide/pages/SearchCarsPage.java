@@ -43,26 +43,32 @@ public class SearchCarsPage extends Utility {
 
 
     public String verifySearchCarsPageText(){
+        log.info("Verify search cars page text" + verifyPageText.toString());
     return getTextFromElement(verifyPageText);
     }
 
     public void selectMakeOfTheCarFromDropDownList(String text){
+        log.info("Select the make of the car "+ make + " from the drop down menu" + make.toString());
         selectByVisibleTextFromDropDown(make, text);
     }
 
     public void selectModelOfTheCarFromDropDownList(String text){
+        log.info("Select the make of the car "+ model + " from the drop down menu" + model.toString());
         selectByVisibleTextFromDropDown(model, text);
     }
 
     public void selectLocationFromDropDownList(String text){
+        log.info("Select the make of the car "+ location + " from the drop down menu" + location.toString());
         selectByVisibleTextFromDropDown(location, text);
     }
 
     public void selectPriceFromDropDownList(String text){
+        log.info("Select the make of the car "+ price + " from the drop down menu" + price.toString());
         selectByVisibleTextFromDropDown(price, text);
     }
 
     public void clickOnFindMyNextCar(){
+        log.info("click on Find my next car link" + findNextCar.toString());
         clickOnElement(findNextCar);
     }
 
